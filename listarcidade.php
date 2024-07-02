@@ -13,8 +13,8 @@
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_array($result);
     ?>
-    <h1>Consulte cidade</h1>
-    <a href="cadastrocidade.html">Cadastrar nova cidade</a>
+    <h1 align="center">Consulte cidade</h1>
+    <a  href="cadastrocidade.html">Cadastrar nova cidade</a>
     <table align="center" border="1" width="500">
         <tr>
             <th>Código</th>
@@ -30,6 +30,7 @@
             echo "</tr>";
         }
         ?>
+        
     </table>
 </body>
 </html>

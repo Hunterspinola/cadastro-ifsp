@@ -1,0 +1,11 @@
+button{
+   background: cadetblue;
+    box-shadow: 0 .10rem 1rem rgba(0, 0, 0, .1);
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+button :hover{
+    background: rgb(216, 152, 152);
+}
