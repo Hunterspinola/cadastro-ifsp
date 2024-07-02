@@ -1,11 +1,27 @@
-button{
-   background: cadetblue;
-    box-shadow: 0 .10rem 1rem rgba(0, 0, 0, .1);
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a0cfcf;
 }
+button{
+    width: 40%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: #a0cfcf;
+    box-shadow: 0px 10px 40px -12px #5957b9;
+    }
+  
+
 a{
     text-decoration: none;
     color: antiquewhite;
 }
-button :hover{
-    background: rgb(216, 152, 152);
-}
+
