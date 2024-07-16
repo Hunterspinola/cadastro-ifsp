@@ -1,27 +1,51 @@
-
-h1{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #a0cfcf;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
 }
-button{
-    width: 40%;
-    padding: 16px 0px;
+
+/* Estilos para o título */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000; /* Cor preta */
+}
+
+/* Estilos para a div de botões */
+#but {
+    text-align: center;
+}
+
+/* Estilos para os botões */
+button {
+    display: inline-block;
+    width: 250px; /* Mesma largura para todos os botões */
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #007bff; /* Cor azul */
+    color: white;
     border: none;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #000000;
-    background: #a0cfcf;
-    box-shadow: 0px 10px 40px -12px #5957b9;
-    }
-  
-
-a{
-    text-decoration: none;
-    color: antiquewhite;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
+/* Estilos para os links dentro dos botões */
+button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mudança de cor ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
