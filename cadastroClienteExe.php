@@ -13,14 +13,14 @@
     include('includes/conexao.php');
     $nome = $_POST['nome'];
     $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $ativo = $_POST['ativo'];
+    $cidade = $_POST['cidade'];
     echo "<h1>Dados do cliente</h1>";
     echo "Nome: $nome<br>";
     echo "Email: $email<br>";
-
-    //INSERT INTO cidade (nome, email)
-    //VALUES ('$nome','$email')
-    $sql = "INSERT INTO Cliente (nome, email)";
-    $sql .= " VALUES ('".$nome."','".$email."')";
+    $sql = "INSERT INTO cliente(nome, email, senha, ativo, cidade_id)";
+    $sql .= " VALUES('".$nome."','".$email."','".$senha."','".$ativo."','".$cidade."' )";
     echo $sql;
     //executa comando do banco de dados 
     $result = mysqli_query($con,$sql);

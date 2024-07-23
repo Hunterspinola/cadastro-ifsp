@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #f4f4f9;
 }
 
 /* Estilos para o fieldset */
@@ -20,29 +20,26 @@ fieldset {
 
 /* Estilos para a legenda */
 legend {
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1.5em;
+    color: #007bff;
     padding: 0 10px;
-    color: rgb(0, 0, 0);
 }
 
-/* Estilos para os divs dentro do fieldset */
-fieldset > div {
-    margin-bottom: 15px;
-}
-
-/* Estilos para os labels */
+/* Estilos para os rótulos e inputs */
 label {
     display: block;
-    margin-bottom: 5px;
+    margin: 10px 0 5px;
 }
 
-/* Estilos para os inputs e selects */
-input[type="text"], select {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 /* Estilos para o botão */
@@ -61,7 +58,4 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-a{
-    color: #fff;
 }

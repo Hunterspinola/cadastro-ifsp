@@ -12,8 +12,17 @@
     include('includes/conexao.php');
     $sql = "SELECT * FROM cidade";
     $result = mysqli_query($con,$sql);
-    $row = mysqli_fetch_array($result);
+    
     ?>
+      <nav>
+        <ul>
+        <li><a href="cadastrarCliente.php">Cadastrar cliente</a></li>
+        <li><a href="listarCliente.php">Ver clientes já cadastrados</a></li>
+        <li><a href="index.html">MENU</a></li>
+        </ul>
+        
+       
+    </nav>
     <h1 align="center">Consulte cidade</h1>
     <table align="center" border="1" width="500">
         <tr>
@@ -37,5 +46,6 @@
     </table>
 
     <a  href="cadastrocidade.html">Cadastrar nova cidade</a>
+    
 </body>
 </html>

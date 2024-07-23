@@ -1,9 +1,9 @@
 <?php
 include('includes/conexao.php');
-$id = $_POST['id'];
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+$id = $_GET['id'];
+$sql = "SELECT * FROM cliente WHERE id=$id";
+$result = mysqli_query($con, $sql);
+$row = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,20 +11,29 @@ $senha = $_POST['senha'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <link rel="stylesheet" href="alteraCliente.css">
 </head>
 <body>
-    <h1> Alteração de Cliente</h1>
-
-    <?php
-        $sql = "UPDATE Cliente SET nome = '$nome', email = '$email', senha = '$senha' WHERE id = $id";
-        $result = mysqli_query($con, $sql);
-        if($result)
-        echo "Dados atualizados";
-        else
-        echo "Erro ao atualizar dados!\n".mysqli_error($con);
-
-    
-    ?>
+<form action="alteraClienteExe.php" method="post">
+<fieldset>
+            <legend>Cadastro de cliente</legend>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+            <div>
+                <button><a href="index.html">voltar</a></button>
+            </div>
 </body>
 </html>
