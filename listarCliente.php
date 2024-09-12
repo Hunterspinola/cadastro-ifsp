@@ -22,7 +22,7 @@
         <ul>
         <li><a href="cadastrocidade.html">Cadastrar cidades</a></li>
         <li><a href="listarcidade.php">Ver cidades já cadastradas</a></li>
-        <li><a href="index.html">MENU</a></li>
+        <li><a href="index.php">MENU</a></li>
         </ul>
         
        
